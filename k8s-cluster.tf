@@ -24,7 +24,7 @@ resource "google_container_cluster" "circleci_cluster" {
   name     = "circleci-cluster"
   location = "us-west1-a"
   # Kubernetes Version
-  min_master_version = "1.17.12-gke.2600"
+  min_master_version = "1.17.13-gke.2600"
   # We can't create a cluster with no node pool defined, but we want to use
   # a separately managed node pool. For that, we create the smallest possible
   # default node pool and immediately delete it.
